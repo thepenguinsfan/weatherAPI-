@@ -5,7 +5,7 @@ print("This program will tell you the weather in any city in the US, UK, and CAN
 #Prompt user for city or postal code
 city = input("Enter a city or a postal code: ")
 #call api with given city or postal code
-response = requests.get(f'http://api.weatherapi.com/v1/current.json?key=48775040ff3a48be82d152408220206&q={city}&aqi=no')
+response = requests.get(f'http://api.weatherapi.com/v1/current.json?key=APIKEY&q={city}&aqi=no')
 #Format response into json 
 data = response.text
 weatherData = json.loads(data)
